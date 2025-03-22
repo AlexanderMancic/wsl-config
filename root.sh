@@ -15,8 +15,9 @@ pacman-key --populate archlinux
 
 pacman -Syu --noconfirm
 
-pacman -S --needed --noconfirm man-db man-pages neovim which tree git github-cli base-devel unzip
+pacman -S --needed --noconfirm man-db man-pages neovim which tree git github-cli base-devel unzip xdg-utils
 
 echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
 
 echo -e "\n[user]\ndefault=$USERNAME" >> /etc/wsl.conf
+

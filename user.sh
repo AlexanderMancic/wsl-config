@@ -1,7 +1,9 @@
 #!/usr/bin/bash
 
-echo -e "export GIT_USERNAME=$1" >> ~/.bashrc
-echo -e "export GIT_EMAIL=$2" >> ~/.bashrc
+source ./.env
+
+echo -e "export GIT_USERNAME=$GIT_USERNAME" >> ~/.bashrc
+echo -e "export GIT_EMAIL=$GIT_EMAIL" >> ~/.bashrc
 source ~/.bashrc
 
 git config --add --global user.name "$GIT_USERNAME"
