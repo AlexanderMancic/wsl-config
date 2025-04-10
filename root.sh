@@ -15,7 +15,7 @@ pacman-key --populate archlinux
 
 pacman -Syu --noconfirm
 
-pacman -S --needed --noconfirm man-db man-pages neovim which tree git github-cli base-devel unzip xdg-utils
+pacman -S --needed --noconfirm man-db man-pages neovim which tree git github-cli base-devel valgrind unzip xdg-utils
 
 echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
 
